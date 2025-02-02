@@ -1,0 +1,264 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #ffffff;
+    padding-top: 20px;
+  }
+  
+  /* Community Container */
+  .community-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Section */
+  .community-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .community-header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+  }
+  
+  .community-header p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-top: 10px;
+  }
+  
+  /* Forum Section */
+  .forum-section {
+    margin-bottom: 30px;
+  }
+  
+  .forum-section h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .forum-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .forum-post {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .forum-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forum-post h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .forum-post p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .view-post-button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .view-post-button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+  }
+  
+  /* User Reviews Section */
+  .reviews-section {
+    margin-bottom: 30px;
+  }
+  
+  .reviews-section h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .review-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 15px;
+    color: #000000;
+  }
+  
+  .review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .read-review-button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .read-review-button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+  }
+  
+  /* Events Section */
+  .events-section {
+    margin-bottom: 30px;
+  }
+  
+  .events-section h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .event-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .event-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .event-card p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .rsvp-button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .rsvp-button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+  }
+  
+  /* Announcements Section */
+  .announcements-section {
+    margin-bottom: 30px;
+  }
+  
+  .announcements-section h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .announcement-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .announcement-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .announcement-card p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Tablet */
+  @media (max-width: 768px) {
+    .forum-posts {
+      flex-direction: column;
+    }
+  
+    .forum-post,
+    .review-card,
+    .event-card,
+    .announcement-card {
+      padding: 15px;
+    }
+  
+    .view-post-button,
+    .read-review-button,
+    .rsvp-button {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 480px) {
+    .community-header h1 {
+      font-size: 2rem;
+    }
+  
+    .community-header p {
+      font-size: 1rem;
+    }
+  
+    .forum-post h3,
+    .review-card h3,
+    .event-card h3,
+    .announcement-card h3 {
+      font-size: 1.2rem;
+    }
+  
+    .forum-post p,
+    .review-card p,
+    .event-card p,
+    .announcement-card p {
+      font-size: 1rem;
+    }
+  
+    .view-post-button,
+    .read-review-button,
+    .rsvp-button {
+      font-size: 1rem;
+    }
+  }
+  

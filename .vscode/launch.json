@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-BackendCApplication<backendC>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.RentCar.backendC.BackendCApplication",
+            "projectName": "backendC",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

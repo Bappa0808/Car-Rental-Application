@@ -1,0 +1,138 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Navbar main container */
+  .navbar_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Make navbar fixed at the top */
+    top: 0; /* Stick it to the top of the screen */
+    left: 0; /* Ensure it's aligned to the left */
+    right: 0; /* Ensure it takes full width */
+    z-index: 1000; /* Ensure it's on top of other content */
+    width: 100%; /* Ensure it takes full width */
+    box-sizing: border-box;
+    transition: top 0.3s ease; /* Smooth transition for top positioning */
+  }
+  
+  /* Add padding to the body to prevent content from being hidden behind the navbar */
+  body {
+    padding-top: 50px; /* Adjust this value to match the height of your navbar */
+  }
+  
+  /* Logo Styling */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Navigation items container */
+  .nav_items {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav_items ul {
+    display: flex;
+    gap: 20px; /* Space between items */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .nav_items li {
+    display: inline-block;
+  }
+  
+  .nav_items a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav_items a:hover {
+    color: #ff9800; /* Hover effect */
+  }
+  
+  /* Navbar toggle button (for mobile view) */
+  .navbar-toggler {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+  }
+  
+  /* Active state for nav items in mobile view */
+  .nav_items.active ul {
+    display: block; /* Display the menu when active */
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .nav_items.active ul li {
+    margin-bottom: 10px;
+  }
+  .logged-in-user{
+    background-color: #ff9800;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  /* Media queries for responsive behavior */
+  @media (max-width: 768px) {
+    .nav_items {
+      display: none; /* Hide menu by default on mobile */
+      width: 100%;
+    }
+  
+    .navbar-toggler {
+      display: block; /* Show the toggle button on mobile */
+    }
+  
+    .nav_items.active {
+      display: block; /* Display the menu when toggled */
+    }
+  
+    .nav_items ul {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .nav_items li {
+      display: block;
+      padding: 10px;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .nav_items {
+      display: flex; /* Horizontal layout for larger screens */
+    }
+  
+    .navbar-toggler {
+      display: none; /* Hide the toggle button for larger screens */
+    }
+  }
+  
